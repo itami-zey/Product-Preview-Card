@@ -85,12 +85,17 @@ svg {
 	body {
 		overflow:hidden;
 		min-height:100vh;
+		display:flex;
+		flex-direction:row;
+        justify-content:center;  
+		align-items:center;      
+		min-height:100vh; 
+		padding-top:0;
 	}
 	.container {
 		width:40vw;
 		height:60vh;
 		flex-direction:row;
-		margin:auto;
 	}
 	.mobile-photo {
 		display:none;
