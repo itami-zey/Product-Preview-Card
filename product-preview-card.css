@@ -1,0 +1,132 @@
+body {
+	font-size:14px;
+	background-color:hsl(30, 38%, 92%);
+	display:flex;
+	flex-direction:column;
+	justify-content:center;
+	align-items:center;
+	margin:0;
+	width:100vw;
+	height:100vh;
+	overflow-x:hidden;
+	padding-top:80px;
+}
+.desktop-photo {
+	display:none;
+}
+.mobile-photo {
+	width:100%;
+	height:20%;
+	border-top-left-radius:10px;
+	border-top-right-radius:10px;
+	margin:0;
+}
+.container {
+	width:92%;
+	height:auto;
+	background-color:white;
+	display:flex;
+	justify-content:center;
+	align-items:center;
+	border-radius:10px;
+	padding:0;
+	margin:10% 4%;
+	flex-direction:column;
+}
+h1 {
+	font-family:"Fraunces", sans-serif;
+	margin-left:8%;
+	margin-right:10%;
+}
+p {
+	font-family:"Montserrat", sans-serif;
+	margin-left:8%;
+	margin-right:10%;
+	color:hsl(228, 12%, 48%);
+}
+.price {
+	color:hsl(158, 36%, 37%);
+	font-family:"Fraunces", sans-serif;
+	font-size:2rem;
+	font-weight:700;
+	margin-right:5%;
+	margin-top:5px;
+}
+.old-price {
+	text-decoration:line-through;
+	margin-left:0;
+	position:relative;
+	top:-10px;
+}
+button {
+	margin:8%;
+	display:flex;
+	justify-content:center;
+	align-items:center;
+	background-color:hsl(158, 36%, 37%);
+	border-radius:8px;
+	width:85%;
+	height:8vh;
+	color:white;
+	font-weight:600;
+	border:1px solid hsl(158, 42%, 18%);
+	gap:8px;
+	font-size:14px;
+}
+.price, .old-price {
+	display:inline-block;
+	margin-bottom:0;
+}
+svg {
+	width:18px;
+	height:18px;
+}
+@media screen and (min-width:768px) {
+	body {
+		overflow:hidden;
+		min-height:100vh;
+	}
+	.container {
+		width:40vw;
+		height:60vh;
+		flex-direction:row;
+		margin:auto;
+	}
+	.mobile-photo {
+		display:none;
+	}
+	.desktop-photo {
+		display:block;
+		height:100%;
+		width:48%;
+		border-top-left-radius:10px;
+		border-bottom-left-radius:10px;
+	}
+	.text-container {
+		display:flex;
+		flex-direction:column;
+		flex:1;
+		padding-left:10px;
+		padding-right:25px;
+		padding-top:10px;
+		padding-bottom:10px;
+	}
+	button {
+		height:6vh;
+		font-size:18px;
+	}
+	svg {
+		width:25px;
+		height:25px;
+		top:-1px;
+		left:-5px;
+	}
+	.price-container{
+		display:flex;
+		gap:10px;
+		align-items:center;
+	}
+	.old-price {
+		top:-5px;
+	}
+}
