@@ -6,10 +6,9 @@ body {
 	justify-content:center;
 	align-items:center;
 	margin:0;
-	width:100vw;
-	height:100vh;
+	height:auto;
+	min-height:100vh;
 	overflow-x:hidden;
-	padding-top:80px;
 }
 .desktop-photo {
 	display:none;
@@ -30,7 +29,7 @@ body {
 	align-items:center;
 	border-radius:10px;
 	padding:0;
-	margin:10% 4%;
+	margin:2rem auto;
 	flex-direction:column;
 }
 h1 {
@@ -88,24 +87,29 @@ svg {
 		display:flex;
 		flex-direction:row;
         justify-content:center;  
-		align-items:center;      
-		min-height:100vh; 
-		padding-top:0;
+		align-items:center;  
+		height:auto;    
 	}
 	.container {
-		width:40vw;
-		height:60vh;
+		width:40%;
+		height:auto;
 		flex-direction:row;
+		margin-top:0;
+		margin-bottom:0;
+		justify-content:center;
+		align-items:center;
+		padding:0;
 	}
 	.mobile-photo {
 		display:none;
 	}
 	.desktop-photo {
 		display:block;
-		height:100%;
-		width:48%;
+		height:auto;
+		width:52%;
 		border-top-left-radius:10px;
 		border-bottom-left-radius:10px;
+		margin:0;
 	}
 	.text-container {
 		display:flex;
